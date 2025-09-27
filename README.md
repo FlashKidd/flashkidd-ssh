@@ -13,6 +13,10 @@ Si tienes alguna pregunta o necesitas ayuda, te sugerimos revisar los foros de l
 
 ----
 
+## Changelog
+
+- Added Recon & Advisor; full English UI; Debian/Ubuntu-wide compatibility.
+
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/blob/master/Imagenes/SSHPLUS_MANAGER.png)
 
 # SSHPlus Manager :octocat:
