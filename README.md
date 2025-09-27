@@ -34,7 +34,7 @@ Original author: [@crazy_vpn](https://t.me/crazy_vpn)
 ```bash
 apt-get update -y;
 apt-get upgrade -y;
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus;
+wget https://raw.githubusercontent.com/FlashKidd/SSHPLUS-MANAGER-FREE/master/Plus;
 chmod +x Plus* && ./Plus
 ```
 
