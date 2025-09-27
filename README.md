@@ -1,15 +1,15 @@
-﻿----
+----
 
-⚠️ Estado del Proyecto: Descontinuado ⚠️
+⚠️ Project Status: Discontinued ⚠️
 
-Este proyecto ha sido descontinuado y ya no recibirá actualizaciones o soporte adicional. Aunque puedes seguir utilizando el código disponible, recomendamos explorar otras alternativas activas y actualizadas para manejar tus servidores o VPS.
+This project is discontinued and no longer receives updates or support. You can still use the available code, but we recommend exploring other actively maintained alternatives for managing your servers or VPS instances.
 
-* SSHPlus Manager (Final Versión 38) :octocat:
-* Fecha de Última Actualización: 09/08/2021
+* SSHPlus Manager (Final Version 38) :octocat:
+* Last Updated: 2021-08-09
 
-Si tienes alguna pregunta o necesitas ayuda, te sugerimos revisar los foros de la comunidad o explorar otros repositorios en GitHub con herramientas similares. También puedes abrir un *issue* o enviar un *pull request* si deseas colaborar directamente.
+If you have questions or need help, review community forums or explore similar tools on GitHub. You can also open an issue or submit a pull request if you would like to contribute directly.
 
-* :inbox_tray: Código Fuente: [Descargar](https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Source-Code-SSHPlus.zip)
+* :inbox_tray: Source Code: [Download](https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Source-Code-SSHPlus.zip)
 
 ----
 
@@ -21,114 +21,111 @@ Si tienes alguna pregunta o necesitas ayuda, te sugerimos revisar los foros de l
 
 # SSHPlus Manager :octocat:
 
-## :information_source: Descripción
-Es un script que ofrece un conjunto de características y herramientas diseñadas para 
-proporcionar una extrema facilidad de uso en servidores Linux con un enfoque en el uso de 
-VPN. Viene con una interfaz amigable que proporciona información detallada sobre el servidor y 
-sus usuarios.
+## :information_source: Description
 
-### 1. **SSHPlus Manager – Versión 38**  
-Autor original: [@crazy_vpn](https://t.me/crazy_vpn)  
-- 📢 Canal oficial: [https://t.me/sshplus](https://t.me/sshplus)  
-- 💬 Grupo de soporte: [https://t.me/sshplus_grupo](https://t.me/sshplus_grupo)
+SSHPlus Manager provides an assortment of features and tools designed to simplify server administration on Linux with a focus on VPN usage. It ships with a friendly interface that presents detailed information about the server and its users.
 
-## :computer: Instalación
+### 1. **SSHPlus Manager – Version 38**
+Original author: [@crazy_vpn](https://t.me/crazy_vpn)
+- 📢 Official channel: [https://t.me/sshplus](https://t.me/sshplus)
+- 💬 Support group: [https://t.me/sshplus_grupo](https://t.me/sshplus_grupo)
+
+## :computer: Installation
 ```bash
-apt-get update -y; 
-apt-get upgrade -y; 
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; 
+apt-get update -y;
+apt-get upgrade -y;
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus;
 chmod +x Plus* && ./Plus
 ```
 
-## :computer: Instalación en una Línea (Solo script)
+## :computer: One-Line Installation (Script Only)
 ```bash
 wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod +x Plus* && ./Plus
 ```
 
-:memo: Las dependencias faltantes se instalarán automáticamente durante el proceso.
+:memo: Missing dependencies are installed automatically during the process.
 
-## :rocket: Modo de Uso
+## :rocket: Usage
 
-Ejecute el script simplemente escribiendo `menu` en tu terminal y presionando Enter.
+Run the script by typing `menu` in your terminal and pressing Enter.
 
 ```bash
 menu
 ```
 
-## :bookmark_tabs: Notas
-SSHPlus Manager ofrece las siguientes características:
+## :bookmark_tabs: Notes
+SSHPlus Manager offers the following capabilities:
 
-- Conexiones SSH: Configura y administra conexiones SSH.
-- Conexiones VPN: Administra conexiones Dropbear, SSLTunnel4, OpenVPN, entre otras.
-- Gestión de Usuarios: Crea y elimina usuarios.
-- Monitoreo de Conexiones: Observa el estado y la actividad de las conexiones en línea.
-- Detalles del Sistema y Usuarios: Proporciona información detallada sobre el sistema y los usuarios.
-- Herramientas de Escaneo y Búsqueda: Accede a herramientas de análisis de seguridad.
-- Optimización del Sistema: Realiza tareas de optimización y limpieza del sistema.
+- SSH Connections: Configure and manage SSH sessions.
+- VPN Connections: Manage Dropbear, SSLTunnel4, OpenVPN, and more.
+- User Management: Create and remove user accounts.
+- Connection Monitoring: Track the status and activity of online sessions.
+- System and User Details: Display detailed server and account information.
+- Scanning and Search Tools: Access security analysis utilities.
+- System Optimization: Perform cleanup and optimization tasks.
 
-## :star2: Características 
+## :star2: Features
 
-- Automatización: Simplifica la configuración y administración de servidores.
-- Eficiencia: Ahorra tiempo con una interfaz intuitiva y comandos simplificados.
-- Organización: Facilita la gestión estructurada del servidor y sus servicios.
+- Automation: Simplifies server setup and administration.
+- Efficiency: Saves time with an intuitive interface and streamlined commands.
+- Organization: Keeps server services and accounts neatly managed.
 
-## :hammer_and_wrench: Requisitos 
+## :hammer_and_wrench: Requirements
 
-- Sistema Operativo: Linux (Ubuntu o Debian)
-- Versiones Recomendadas: Ubuntu 18.04 Server x86_64 / Ubuntu 20.04 Server x86_64 / Debian 9 Server x86_64
-- Distribución: Se sugiere utilizar una distribución reciente o recién formateada.
-- Idioma Predeterminado: Portugués
+- Operating System: Linux (Ubuntu or Debian)
+- Recommended Versions: Ubuntu 18.04 Server x86_64 / Ubuntu 20.04 Server x86_64 / Debian 9 Server x86_64
+- Distribution: Ideally use a recent or freshly installed release.
+- Default Language: Portuguese
 
-## :books: Utilidad Opcional (Menu de Administración)
+## :books: Optional Utility (Administration Menu)
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/blob/master/Imagenes/adminplus.png)
 
-## :computer: Instalación
+## :computer: Installation
 ```bash
 wget -qO "/bin/adminplus" https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/refs/heads/master/Proyectos/Adminplus/adminplus; chmod +x /bin/adminplus
 ```
 
-## :rocket: Modo de Uso
+## :rocket: Usage
 
-Ejecute el script simplemente escribiendo `adminplus` en tu terminal y presionando Enter.
+Run the script by typing `adminplus` in your terminal and pressing Enter.
 
 ```bash
 adminplus
 ```
 
-## :file_folder: Proyectos útiles 
+## :file_folder: Helpful Projects
 
-**Principal**
+**Primary**
 
-- AdminPlus – Menú de Administración: [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Proyectos/Adminplus)
-- SSHPlus Keygen: [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Proyectos/SSHPlus_Keygen)
-- Painel Revenda SSH (Versión 20): [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Proyectos/Panel_v20)
-- SSHPlus Bash Obfuscador Web: [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Proyectos/SSHPlus_Bash_Obfuscador_%26_Desofuscador)
+- AdminPlus – Administration Menu: [View Repository](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Proyectos/Adminplus)
+- SSHPlus Keygen: [View Repository](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Proyectos/SSHPlus_Keygen)
+- Painel Revenda SSH (Version 20): [View Repository](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Proyectos/Panel_v20)
+- SSHPlus Bash Obfuscator Web: [View Repository](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Proyectos/SSHPlus_Bash_Obfuscador_%26_Desofuscador)
 
 **Extras**
 
-- Painel Revenda SSH (Versiónes): [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Install/Panel_Web)
-- SSHPlus Skin (Apariencia): [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Install/Skin_Plus)
-- Tcp-Tweaker-1.0 (Tcp-Speed): [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Install/TCP-Speed)
-- Actualización de Repositorios APT para Ubuntu: [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Install/Sources_list)
+- Painel Revenda SSH (Versions): [View Repository](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Install/Panel_Web)
+- SSHPlus Skin (Appearance): [View Repository](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Install/Skin_Plus)
+- Tcp-Tweaker-1.0 (Tcp-Speed): [View Repository](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Install/TCP-Speed)
+- Update APT Repositories for Ubuntu: [View Repository](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/tree/master/Install/Sources_list)
 
+## :open_file_folder: Repository Structure
 
-## :open_file_folder: Estructura del Repositorio
+| Icon            | Name           | Description                                |
+|-----------------|----------------|--------------------------------------------|
+| :file_folder:    | Imagenes       | Image assets                               |
+| :file_folder:    | Install        | Installation scripts                       |
+| :file_folder:    | Modulos        | Additional modules                         |
+| :file_folder:    | Proyectos      | Project versions                           |
+| :file_folder:    | Versiones      | Project archives                           |
+| :page_facing_up: | .gitattributes | Git configuration file                     |
+| :package:        | Plus           | Bash installer                             |
+| :book:           | README.md      | Main documentation file                    |
+| :page_facing_up: | credits        | Project credits                            |
 
-| Icono            | Nombre         | Descripción                               |
-|------------------|----------------|-------------------------------------------|
-| :file_folder:    | Imagenes       | Carpeta para imágenes                     |
-| :file_folder:    | Install        | Carpeta para scripts de instalación       |
-| :file_folder:    | Modulos        | Carpeta para módulos adicionales          |
-| :file_folder:    | Proyectos      | Carpeta de versiones del proyecto         |
-| :file_folder:    | Versiones      | Carpeta para proyectos                    |
-| :page_facing_up: | .gitattributes | Archivo para configuración de Git         |
-| :package:        | Plus           | Instalador en Bash                        |
-| :book:           | README.md      | Archivo de documentación principal        |
-| :page_facing_up: | credits        | Archivo de creditos del proyecto          |
-
-## :email: Contacto 
-* :busts_in_silhouette: **@crazy_vpn**: [Telegram](https://t.me/crazy_vpn) - Desarrollador SSHPlus Manager
-* :busts_in_silhouette: **illuminati Dev Team**: [Telegram](https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ) - Actualización de Repositorio
+## :email: Contact
+* :busts_in_silhouette: **@crazy_vpn**: [Telegram](https://t.me/crazy_vpn) – SSHPlus Manager developer
+* :busts_in_silhouette: **illuminati Dev Team**: [Telegram](https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ) – Repository maintenance
 
 ☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ ☆
