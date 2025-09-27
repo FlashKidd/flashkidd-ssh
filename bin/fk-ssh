@@ -1,0 +1,95 @@
+#!/usr/bin/env bash
+# FlashKidd SSH main menu shell
+# Provides a simple text-based navigator for FlashKidd automation modules.
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+show_banner() {
+  clear
+  echo "FlashKidd SSH — Main Menu"
+  echo "=========================="
+}
+
+pause() {
+  if [[ -t 0 && -t 1 ]]; then
+    echo
+    read -rp "Press Enter to continue…" _ || true
+  fi
+}
+
+module_not_available() {
+  local title="$1"
+  local script="$2"
+  echo
+  echo "$title module is not available. Add $script to enable this option."
+  pause
+}
+
+run_module() {
+  local title="$1"
+  local script="$2"
+  local path="$SCRIPT_DIR/$script"
+  if [[ -x "$path" ]]; then
+    bash "$path"
+  else
+    module_not_available "$title" "$script"
+  fi
+}
+
+main_menu() {
+  while true; do
+    show_banner
+    cat <<MENU
+ 1) User Management
+ 2) Active Connections
+ 3) System Information
+ 4) Tools
+ 5) Scan / Search
+ 6) Optimize / Cleanup
+ 7) Exit
+ 8) Recon & Advisor
+MENU
+    echo
+    local choice
+    if ! read -rp "Choose an option: " choice; then
+      echo
+      echo "Input stream closed. Exiting."
+      exit 0
+    fi
+    case "$choice" in
+      1)
+        run_module "User Management" "fk-users.sh"
+        ;;
+      2)
+        run_module "Active Connections" "fk-connections.sh"
+        ;;
+      3)
+        run_module "System Information" "fk-system.sh"
+        ;;
+      4)
+        run_module "Tools" "fk-tools.sh"
+        ;;
+      5)
+        run_module "Scan / Search" "fk-scan.sh"
+        ;;
+      6)
+        run_module "Optimize / Cleanup" "fk-optimize.sh"
+        ;;
+      7)
+        echo "Goodbye."
+        exit 0
+        ;;
+      8)
+        bash "$SCRIPT_DIR/fk-recon.sh"
+        ;;
+      *)
+        echo
+        echo "Invalid option. Please try again."
+        pause
+        ;;
+    esac
+  done
+}
+
+main_menu
